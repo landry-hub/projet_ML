@@ -100,7 +100,7 @@ if page == "📊 Exploration & Stratégie":
     st.divider()
     
     tab1, tab2, tab3, tab4, tab5 = st.tabs([
-        "🔥 Corrélations", "📈 Distributions", "🎯 Performance Modèle", "🏆 Segmentation", "🧠 IA Insight"
+        "🔥 Corrélations", "📈 Distributions", "🎯 Performance Modèle", "🏆 Segmentation", "🧠 Insight"
     ])   
 
     with tab1:
@@ -180,7 +180,7 @@ else:
         c1, c2 = st.columns([1, 1.5])
         
         with c1:
-            st.subheader("Résultat de l'IA")
+            st.subheader("Résultat ")
             if prediction == 1:
                 st.success(f"### CLASSE 1 (CIBLE)\nProbabilité : {probability[1]:.1%}")
                 st.balloons()
